@@ -1,4 +1,6 @@
 cmake
+matplotlib
+cv2
 dlib
 numpy
 face_recognition
