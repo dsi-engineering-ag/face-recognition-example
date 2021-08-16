@@ -8,7 +8,7 @@ import os
 import glob
 
 # Get a reference to webcam #0 (the default one)
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(1)
 
 try: 
     #make array of sample pictures with encodings
@@ -18,7 +18,7 @@ try:
     path = os.path.join(dirname, 'known_people/')
 
     #make an array of all the saved jpg files' paths
-    list_of_files = [f for f in glob.glob('known_people/*.jpg')]
+    list_of_files = [f for f in glob.glob('known_people/*.jp*g')]
     
     #find number of known faces
     number_files = len(list_of_files)
